@@ -5,6 +5,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 
+\usepackage{indentfirst}
+
 % Improved mathematic features
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{icomma}
+\usepackage{dsfont} % Badass mathematical font
+
+% Colors
+\usepackage{color}
+
+\usepackage{hyperref}
