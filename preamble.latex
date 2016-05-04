@@ -10,6 +10,10 @@
 
 \usepackage{indentfirst}
 
+% Work with images
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
 % Improved mathematic features
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{icomma}
@@ -17,5 +21,4 @@
 
 % Colors
 \usepackage{color}
-
 \usepackage{hyperref}
