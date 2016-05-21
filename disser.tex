@@ -1,0 +1,15 @@
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=authoryear-icomp,
+    sortlocale=ru_RU,
+    natbib=true,
+    url=false,
+    doi=true,
+    eprint=false
+]{biblatex}
+% Hack to prevent Error: langjapanese undefined.
+\NewBibliographyString{langjapanese}
+\NewBibliographyString{fromjapanese}
+% GOST support
+\bibliographystyle{utf8gost705u.bst}
