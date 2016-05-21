@@ -4,6 +4,7 @@
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
+\frenchspacing
 
 % Tables
 \usepackage{tabularx}
@@ -18,7 +19,19 @@
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{icomma}
 \usepackage{dsfont} % Badass mathematical font
+\renewcommand{\arraystretch}{1.5}
 
 % Colors
 \usepackage{color}
-\usepackage{hyperref}
+
+% Some typographic features
+\usepackage{setspace}
+
+% References
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage{fancyref}
+
+% Theorems
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}
