@@ -19,7 +19,10 @@
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{icomma}
 \usepackage{dsfont} % Badass mathematical font
-\renewcommand{\arraystretch}{1.5}
+%\renewcommand{\arraystretch}{1.5} % Make formulas more readable
+% \colvec[scale]{data} produces vector column which looks smaller than matrix
+\newcommand{\colvec}[2][.8]{%
+  \scalebox{#1}{$\begin{array}{@{}c@{}}#2\end{array}$}}%
 
 % Colors
 \usepackage{color}
