@@ -1,15 +1,27 @@
 % Russian language support
 \usepackage{cmap}
 \usepackage{mathtext}
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
 \frenchspacing
+
+\usepackage{ifxetex}
+\ifxetex
+    \usepackage{fontspec}
+    \setmainfont{Linux Libertine O}
+    \usepackage{polyglossia}
+    \setmainlanguage{russian}
+    \setotherlanguage{english}
+\else
+    \usepackage[T2A]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage[english,russian]{babel}
+\fi
+
 
 % Tables
 \usepackage{tabularx}
 
 \usepackage{indentfirst}
+\usepackage{multicol}
 
 % Work with images
 \usepackage{graphicx}
@@ -34,6 +46,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{cleveref}
 \usepackage{fancyref}
+
 
 % Theorems
 \theoremstyle{remark}
