@@ -15,6 +15,7 @@
 
 % Improved mathematic features
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
+\usepackage{mathrsfs}
 \usepackage{icomma}
 \usepackage{dsfont} % Badass mathematical font
 %\renewcommand{\arraystretch}{1.5} % Make formulas more readable
@@ -40,20 +41,22 @@
 \newtheorem{remark}{Замечание}
 
 \usepackage{ifxetex}
-\ifxetex
+\ifxetex%
     %%% Math font
-    \usepackage{mathspec}
-    \defaultfontfeatures{Ligatures=TeX}
+    %\usepackage{mathspec}
+    %\defaultfontfeatures{Ligatures=TeX}
     %\setmathsfont(Digits){TeX Gyre Termes}
     %\setmathsfont(Latin){TeX Gyre Termes}
     %\setmathrm{TeX Gyre Termes}
-
-    \usepackage[no-math]{fontspec}
-    \setmainfont{Linux Libertine O}
-
+    \usepackage{fontspec}
+    \setmainfont{Times New Roman}
     \usepackage{polyglossia}
+    \usepackage{csquotes}
+    %\newfontfamily{\cyrillicfonttt}{Linux Libertine O}
+    %\newfontfamily{\cyrillicfonttt}{Times New Roman}
     \setmainlanguage{russian}
     \setotherlanguage{english}
+    \defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
 \else
     \usepackage{cmap}
     \usepackage[T2A]{fontenc}
