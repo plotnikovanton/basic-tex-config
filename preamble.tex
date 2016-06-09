@@ -12,8 +12,10 @@
 % Work with images
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{float}
 
 % Improved mathematic features
+\usepackage{braket}
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{mathrsfs}
 \usepackage{icomma}
@@ -30,32 +32,32 @@
 \usepackage{setspace}
 
 % References
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
 \usepackage{cleveref}
 \usepackage{fancyref}
 \usepackage{autonum}
 
 
 % Theorems
+\newtheorem{theorem}{Теорема}
 \theoremstyle{remark}
 \newtheorem{remark}{Замечание}
 
 \usepackage{ifxetex}
 \ifxetex%
-    %%% Math font
-    %\usepackage{mathspec}
-    %\defaultfontfeatures{Ligatures=TeX}
-    %\setmathsfont(Digits){TeX Gyre Termes}
-    %\setmathsfont(Latin){TeX Gyre Termes}
-    %\setmathrm{TeX Gyre Termes}
+    \usepackage{mathspec}
     \usepackage{fontspec}
-    \setmainfont{Times New Roman}
+    %\setmainfont{Times New Roman}
+    \setmainfont{Liberation Serif}
+    \setmathfont{TeX Gyre Pagella Math}
+
     \usepackage{polyglossia}
     \usepackage{csquotes}
-    %\newfontfamily{\cyrillicfonttt}{Linux Libertine O}
-    %\newfontfamily{\cyrillicfonttt}{Times New Roman}
+    \newfontfamily{\cyrillicfonttt}{Liberation Serif}
+    %\newfontfamily\cyrillicfonttt{Linux Libertine 0}
     \setmainlanguage{russian}
     \setotherlanguage{english}
+    \setotherlanguage[variant=us]{english}
     \defaultfontfeatures{Ligatures={TeX},Renderer=Basic} 
 \else
     \usepackage{cmap}
