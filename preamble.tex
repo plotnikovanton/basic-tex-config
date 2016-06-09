@@ -1,38 +1,36 @@
-% Russian language support
-\usepackage{mathtext}
-\frenchspacing
+% Author: Plotnikov Anton
+% 2016
+%
+% My simple latex preamble feel free to modify and use
+%
 
+% Russian polygraph's style support
+\usepackage{indentfirst} % indentation on first paragraph in section
+\frenchspacing % tells LaTeX not to insert extra space at the end of sentences
+\usepackage{setspace}
 
 % Tables
 \usepackage{tabularx}
-
-\usepackage{indentfirst}
 \usepackage{multicol}
 
 % Work with images
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{float}
+\usepackage{graphicx} % support of images
+\usepackage{wrapfig} % support of wrapping figures by text
+\usepackage{float} % let you insert images where you really want
 
 % Improved mathematic features
+\usepackage{mathtext}
 \usepackage{braket}
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}
 \usepackage{mathrsfs}
 \usepackage{icomma}
 \usepackage{dsfont} % Badass mathematical font
-%\renewcommand{\arraystretch}{1.5} % Make formulas more readable
-% \colvec[scale]{data} produces vector column which looks smaller than matrix
-\newcommand{\colvec}[2][.8]{%
-  \scalebox{#1}{$\begin{array}{@{}c@{}}#2\end{array}$}}%
 
 % Colors
 \usepackage{color}
 
-% Some typographic features
-\usepackage{setspace}
-
 % References
-%\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{cleveref}
 \usepackage{fancyref}
 \usepackage{autonum}
@@ -43,6 +41,7 @@
 \theoremstyle{remark}
 \newtheorem{remark}{Замечание}
 
+% Defines Russian localization for xetex or other environment separately
 \usepackage{ifxetex}
 \ifxetex%
     \usepackage{mathspec}
