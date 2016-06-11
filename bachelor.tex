@@ -100,7 +100,7 @@
 \newcommand{\empline}{\mbox{}\newline}
 \newcommand{\likechapterheading}[1]{
     \begin{center}
-    \textbf{\MakeUppercase{#1}}
+    \textbf{{#1}}
     \end{center}
     \empline}
 \makeatletter
@@ -109,5 +109,5 @@
 \makeatother
 \newcommand{\likechapter}[1]{
     \likechapterheading{#1}
-    \addcontentsline{toc}{likechapter}{\MakeUppercase{#1}}}
+    \addcontentsline{toc}{likechapter}{{#1}}}
 
