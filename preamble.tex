@@ -8,6 +8,7 @@
 \usepackage{indentfirst} % indentation on first paragraph in section
 \frenchspacing % tells LaTeX not to insert extra space at the end of sentences
 \usepackage{setspace}
+\providecommand\No{\char"2116}
 
 % Tables
 \usepackage{tabularx}
@@ -34,10 +35,18 @@
 \usepackage{fancyref}
 \usepackage{autonum}
 
+% Other packages
+\usepackage{scrextend} % indents bolck of texts
+
 % Theorems
 \newtheorem{theorem}{Теорема}
 \theoremstyle{remark}
 \newtheorem{remark}{Замечание}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Задача}
+\theoremstyle{remark}
+\newtheorem*{solution}{Решение}
 
 % Defines Russian localization for xetex or other environment separately
 \usepackage{ifxetex}
